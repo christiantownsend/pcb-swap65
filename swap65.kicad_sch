@@ -2594,7 +2594,7 @@
   (symbol (lib_id "power:+3V3") (at 120.65 166.37 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2a41ba2a-9949-4df2-bdeb-f252c396cedf)
-    (property "Reference" "#PWR?" (id 0) (at 120.65 170.18 0)
+    (property "Reference" "#PWR0102" (id 0) (at 120.65 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (id 1) (at 120.65 162.56 0))
@@ -3309,13 +3309,13 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 137.16 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid cae0e1b1-9487-46db-ad2c-ad47579ebd8e)
-    (property "Reference" "J?" (id 0) (at 139.7 168.9099 0)
+    (property "Reference" "J2" (id 0) (at 139.7 168.9099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x04" (id 1) (at 139.7 171.4499 0)
+    (property "Value" "OLED" (id 1) (at 139.7 171.4499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 137.16 168.91 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (id 2) (at 137.16 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 137.16 168.91 0)
@@ -3482,7 +3482,7 @@
   (symbol (lib_id "power:GND") (at 120.65 168.91 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e68f93c6-1525-499e-acec-0db2bf143259)
-    (property "Reference" "#PWR?" (id 0) (at 120.65 175.26 0)
+    (property "Reference" "#PWR0101" (id 0) (at 120.65 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 120.65 172.72 0))
@@ -3713,11 +3713,11 @@
     (path "/17871e9f-40e5-4aaa-b290-6a3d6d54411a"
       (reference "#PWR026") (unit 1) (value "GND") (footprint "")
     )
-    (path "/2a41ba2a-9949-4df2-bdeb-f252c396cedf"
-      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
-    )
     (path "/e68f93c6-1525-499e-acec-0db2bf143259"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2a41ba2a-9949-4df2-bdeb-f252c396cedf"
+      (reference "#PWR0102") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/520bad3e-5c36-4559-91de-edb06e0e641d"
       (reference "C1") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
@@ -3969,7 +3969,7 @@
       (reference "J1") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12")
     )
     (path "/cae0e1b1-9487-46db-ad2c-ad47579ebd8e"
-      (reference "J?") (unit 1) (value "Conn_01x04") (footprint "")
+      (reference "J2") (unit 1) (value "OLED") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/5906767e-3e7f-41b3-9f1a-a9d001e4281d"
       (reference "R1") (unit 1) (value "27R") (footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder")
@@ -4185,7 +4185,7 @@
       (reference "SW59") (unit 1) (value "Left") (footprint "marbastlib-mx:SW_MX_HS_1u")
     )
     (path "/4c22d526-8605-498d-80f5-ad20d643781f/1d7ddbff-5ac7-4929-b748-ee085871cee8"
-      (reference "SW60") (unit 1) (value "Pipe") (footprint "marbastlib-mx:SW_MX_HS_1u")
+      (reference "SW60") (unit 1) (value "Pipe") (footprint "marbastlib-mx:SW_MX_HS_S_1u")
     )
     (path "/4c22d526-8605-498d-80f5-ad20d643781f/b465f019-40c2-4a51-8a6d-73645fc8ad9e"
       (reference "SW61") (unit 1) (value "BkSlsh") (footprint "marbastlib-mx:SW_MX_HS_1.5u")
@@ -4200,10 +4200,10 @@
       (reference "SW64") (unit 1) (value "Down") (footprint "marbastlib-mx:SW_MX_HS_1u")
     )
     (path "/4c22d526-8605-498d-80f5-ad20d643781f/52a34629-ad18-49b1-8e85-6dc3f19bf2f8"
-      (reference "SW65") (unit 1) (value "BkSpc") (footprint "marbastlib-mx:SW_MX_HS_1u")
+      (reference "SW65") (unit 1) (value "BkSpc") (footprint "marbastlib-mx:SW_MX_HS_S_1u")
     )
     (path "/4c22d526-8605-498d-80f5-ad20d643781f/cfe80bc2-b293-419e-8d17-f3727aa786f1"
-      (reference "SW66") (unit 1) (value "Tilde") (footprint "marbastlib-mx:SW_MX_HS_1u")
+      (reference "SW66") (unit 1) (value "Tilde") (footprint "marbastlib-mx:SW_MX_HS_S_1u")
     )
     (path "/4c22d526-8605-498d-80f5-ad20d643781f/06084a08-d138-48af-bb7a-e47886851923"
       (reference "SW67") (unit 1) (value "Right") (footprint "marbastlib-mx:SW_MX_HS_1u")
